@@ -14,4 +14,12 @@ To run this file, we do the following in our Terminal:
 USE burgers_db;
 
 -- Insert a set of records into the 'burgers' table
-INSERT INTO burgers (id, burger_name, devoured) VALUES ();
+INSERT INTO burgers (burger_name, devoured) VALUES ("Old School Cheeseburger" ,1);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Sprouted Veggie Burger", 1);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Jalapeño Cowboy Burger", 1);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Breakfast Burger", 0);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Bacon Barbecue Burger", 0);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Spiced Falafel Burger ", 0);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Double Mushroom Burger ", 0);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Thai Salmon Burger ", 0);
+
