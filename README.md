@@ -60,6 +60,18 @@ This app stores every burger in a MySQL database, whether it is devoured or not,
 
 5. Close out of the MySQL command line tool: `exit`.
 
+In the [**connection.js**](config/connection.js) file in the `config` folder, make sure to change this part of the code with your specific credentials
+
+```
+const connection = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  // Be sure to update with your own MySQL password!
+  password: "",
+  database: "burgers_db",
+});
+```
+
 ## Usage
 
 Click [**here**]() to view deployed application on Heroku.

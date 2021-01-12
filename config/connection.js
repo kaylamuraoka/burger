@@ -6,7 +6,7 @@ const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
   // Be sure to update with your own MySQL password!
-  password: "Kmuraoka808!",
+  password: "",
   database: "burgers_db",
 });
 
