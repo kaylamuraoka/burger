@@ -74,7 +74,7 @@ const connection = mysql.createConnection({
 
 ## Usage
 
-Click [**here**]() to view deployed application on Heroku.
+Click [**here**](https://secure-ravine-36989.herokuapp.com/) to view deployed application on Heroku.
 
 ## License
 
