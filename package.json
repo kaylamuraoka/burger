@@ -1,7 +1,7 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "<p align=\"center\">   <img src=\"https://img.shields.io/badge/LICENSE-mit-green\"/>",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,13 +11,14 @@
     "url": "git+https://github.com/kaylamuraoka/burger.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kayla Muraoka",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kaylamuraoka/burger/issues"
   },
   "homepage": "https://github.com/kaylamuraoka/burger#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "mysql": "^2.18.1"

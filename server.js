@@ -2,6 +2,7 @@
 // Series of npm packages that we will use to give our server useful functionality
 const express = require("express");
 const exphbs = require("express-handlebars");
+const bodyParser = require("body-parser");
 const router = require("./controller/burgers_controller");
 
 // Sets up an initial port that will be used later in our listener
@@ -14,9 +15,10 @@ const app = express();
 // Serve the static content for the app from the "public" directory in the application directory
 app.use(express.static(__dirname + "/public"));
 
-// Parse request body as JSON
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }));
+// parse application/json
+app.use(bodyParser.json());
 
 // SET OUR VIEWS AND VIEW ENGINE
 app.engine(
