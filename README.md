@@ -16,6 +16,10 @@
 
 Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat and stores every burger in a database, whether devoured or not. Following the MVC design pattern, this application uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML that renders in the browser.
 
+## Demo
+
+![Demo gif of application](./public/assets/images/burger_demo.gif)
+
 ### How it works
 
 The following steps explain how this "Eat-Da-Burger" application works:
