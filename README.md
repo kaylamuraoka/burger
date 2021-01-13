@@ -18,7 +18,11 @@ Eat-Da-Burger! is a restaurant app that lets users input the names of burgers th
 
 ## Demo
 
-![Demo gif of application](./public/assets/images/burger_demo.gif)
+![Demo gif of app](./public/assets/images/burger_demo.gif)
+
+### Screenshot of App
+
+![Screenshot of app](./public/assets/images/screenshot_of_app.png)
 
 ### How it works
 
