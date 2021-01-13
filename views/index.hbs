@@ -1,0 +1,103 @@
+<div class="banner-image text-center">
+  <h1>Eat-Da-Burger!</h1>
+  <h5 class="mb-4">
+    Are you craving a burger? Well, you came to the right place... Here is a
+    collection of mouthwatering burgers just begging to be eaten by you. You can
+    easily order your own one-of-a-kind burger and it'll be ready for you in
+    seconds!
+  </h5>
+  <div class="orderFormArea mx-auto">
+    <form id="createBurgerForm">
+      <div class="form-group">
+        <input
+          type="text"
+          name="burger_name"
+          class="form-control form-control-sm"
+          placeholder="e.g., Bacon BBQ Burger, Old School Cheeseburger"
+          id="burger_name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <h5>Has this buger been devoured?</h5>
+        <label class="radio-inline px-2">
+          <input type="radio" id="devoured" name="devoured" value="1" />
+          Devoured
+        </label>
+        <label class="radio-inline px-2">
+          <input
+            type="radio"
+            id="notDevoured"
+            name="devoured"
+            value="0"
+            checked
+          />
+          Still up for grabs...
+        </label>
+      </div>
+
+      <button type="submit" class="btn" id="placeOrder">
+        <i class="fas fa-shopping-cart mr-2"></i>Place Order
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="container-fluid my-4">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6 my-3">
+      {{!-- waiting area --}}
+      <h3 class="text-center">Ready to eat!</h3>
+      <ul class="list-group">
+        {{#each burgers}} {{#unless devoured}}
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <span><img src="/assets/images/burger.png" alt="Burger" class="burgerImg mr-2" width="30
+        "/>{{ burger_name }}</span>
+          <div class="button-group">
+            <button
+              class="btn btn-sm"
+              id="devourBurger"
+              data-id="{{ id }}"
+              data-burger_name="{{ burger_name }}"
+              data-devoured="{{ devoured }}"
+            >
+              <i class="fas fa-utensils mr-2"></i>Devour it!
+            </button>
+            <button
+              class="btn btn-sm"
+              id="deleteBurger"
+              data-id="{{ id }}"
+            >
+              <i class="fas fa-trash-alt mr-2"></i>Trash
+            </button>
+          </div>
+        </li>
+        {{/unless}} {{/each}}
+      </ul>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6 my-3">
+      {{!-- Eaten Burgers --}}
+      <h3 class="text-center">Already eaten!</h3>
+      <ul class="list-group">
+        {{#each burgers}} {{#if devoured}}
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        ><span><img src="/assets/images/burger.png" alt="Burger" class="burgerImg mr-2" width="30
+        "/>{{ burger_name }}</span>
+          <button
+            class="btn btn-sm"
+            id="deleteBurger"
+            data-id="{{ id }}"
+          >
+            <i class="fas fa-trash-alt mr-2"></i>Trash
+          </button>
+        </li>
+        {{/if}} {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>

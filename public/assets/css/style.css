@@ -1,0 +1,231 @@
+body {
+  color: #f1e3b4;
+  margin: 0;
+}
+
+/* Font size media queries */
+body {
+  background-color: #ffffff;
+}
+h1 {
+  font-family: "Caveat Brush", cursive;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #9c2c0c;
+}
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+label {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+.list-group-item {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #9c2c0c;
+  text-transform: capitalize;
+}
+
+#header {
+  background-color: #9c2c0c;
+  padding: 30px 20px 30px 20px;
+}
+
+.banner-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/assets/images/banner.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 40px;
+  color: white;
+}
+
+#orderSection {
+  background-color: #e49926;
+  width: 90%;
+  border-radius: 5px;
+}
+
+#placeOrder {
+  background-color: white;
+  color: #9c2c0c;
+}
+
+#deleteBurger {
+  background-color: #9c2c0c;
+  color: white;
+}
+
+#devourBurger {
+  background-color: #e49926;
+  color: white !important;
+}
+
+.orderFormArea {
+  width: 50%;
+}
+
+input[type="text"] {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+/* input[type="text"]:focus {
+  background-color: #f1e3b4;
+  border: 2px solid #e49926;
+} */
+
+::placeholder {
+  color: #9c2c0c !important;
+}
+
+@media (min-width: 200px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  h3 {
+    font-size: 19px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  h5,
+  label {
+    font-size: 12px;
+  }
+  .list-group-item {
+    font-size: 11px;
+  }
+}
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  h3 {
+    font-size: 19px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  h5,
+  label {
+    font-size: 12px;
+  }
+  li {
+    font-size: 12px;
+  }
+  .list-group-item {
+    font-size: 12px;
+  }
+}
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 19px;
+  }
+  h4 {
+    font-size: 17px;
+  }
+  h5,
+  label {
+    font-size: 14px;
+  }
+  .list-group-item {
+    font-size: 14px;
+  }
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 21px;
+  }
+  h4 {
+    font-size: 17px;
+  }
+  h5,
+  label {
+    font-size: 14px;
+  }
+  .list-group-item {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 19px;
+  }
+  h5,
+  label {
+    font-size: 15px;
+  }
+  .list-group-item {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 19px;
+  }
+  h5,
+  label {
+    font-size: 18px;
+  }
+  .list-group-item {
+    font-size: 18px;
+  }
+}
