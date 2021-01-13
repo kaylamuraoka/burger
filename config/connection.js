@@ -1,14 +1,20 @@
 // DEPENDENCIES
 const mysql = require("mysql");
 
-// MySQL DB Connection Information (remember to change this with your specific credentials)
-const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  // Be sure to update with your own MySQL password!
-  password: "",
-  database: "burgers_db",
-});
+const connection;
+
+if (process.env.JAWSDB_URL) {
+  connection.mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  // MySQL DB Connection Information (remember to change this with your specific credentials)
+  connection = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    // Be sure to update with your own MySQL password!
+    password: "",
+    database: "burgers_db",
+  });
+}
 
 // Initiate MySQL Connection
 connection.connect((err) => {
